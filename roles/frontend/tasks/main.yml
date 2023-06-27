@@ -2,8 +2,8 @@
   ansible.builtin.yum:
     name: httpd
     state: installed
-    
+
 - name: Remove old HTTP Documents
-  ansible.debuiltin.file:
+  ansible.builtin.file:
      path: /usr/share/nginx/html
      state: absent     
