@@ -1,6 +1,6 @@
 - name: Install Nginx
   ansible.builtin.yum:
-    name: nginx
+    name: httpd
     state: installed
 
 
