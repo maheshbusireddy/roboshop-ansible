@@ -58,7 +58,7 @@
     login_host: mongodb-dev.devopsb26.online
     file: "/app/schema/catalogue.js"
     idempotent: yes
-  
+  ansible.builtin.shell: mongo --host mongodb-dev.devopsb26.online < /app/schema/catalogue.js
  
 
          
