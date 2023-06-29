@@ -1,14 +1,14 @@
 - name: Disable MySQL default module
   ansible.builtin.shell: dnf module disable mysql -y
 
-- name: Copy MySQl repo file
+- name: Copying MySQL repo file
   ansible.builtin.copy:
     src: mysql.repo
-    dest: /etc/yum.repos.d/
+    dest: /etc/yum.repos.d/mysql.repo
 
-- name: Install SQL server
+- name: Installing MySQL server
   ansible.builtin.yum:
-    name: mysql-community-server
+    name:  mysql-community-server
     state: installed
 
 - name: Start mysql service
