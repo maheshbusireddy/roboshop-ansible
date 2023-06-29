@@ -8,8 +8,8 @@
 
 - name: Install MySQL Server
   ansible.builtin.yum:
-    name: mysql-community-server
-    state: install    
+    name: mysql
+    state: installed   
 
 
 
