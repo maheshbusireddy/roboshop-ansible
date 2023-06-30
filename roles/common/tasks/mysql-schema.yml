@@ -1,5 +1,5 @@
- -name: Install Python Deps
-  ansible.builtin.yum:
+ - name: Install Python Deps
+   ansible.builtin.yum:
     name:
       - python3-PyMySQL
       - mysql
