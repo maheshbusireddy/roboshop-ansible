@@ -1,8 +1,8 @@
 - name: Confugure YUM Repos
   ansible.builtin.shell: curl -s {{ item }} | bash
   loop:
-    - curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | bash
-    -  curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | bash
+    - https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh 
+    - https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh 
 
 - name: Install Erlang RabitMQ
   ansible.builtin.yum:
