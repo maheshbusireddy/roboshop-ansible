@@ -2,7 +2,7 @@
   hosts: localhost
   connection: local
   tasks:
-    - name: create or update key/value pair in AWS SSM parameter store
+    - name: create parameters 
       community.aws.aws_ssm_parameter_store:
           name: "{{ item.name }}"
           value: "{{ item.value }}"
@@ -30,7 +30,7 @@
         - {name: "dev.user.REDIS_HOST", value: "redis-dev.devopsb26.online" }
 
     - name: Create Secrets
-      communit.aws.aws_ssm_parametr_store:
+      community.aws.aws_ssm_parametr_store:
          name: "{{ item.name }}"
          value: "{{ item.value }}"
          region: us-east-1
