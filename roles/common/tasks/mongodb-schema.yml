@@ -14,7 +14,7 @@
 #   ansible.builtin.shell: mongo --host mongodb-dev.devopsb26.online </app/schema/{{component}}.js 
 
 - name: Load Schema
- community.mongodb.mongodb_shell:
+  community.mongodb.mongodb_shell:
    login_host: mongodb-dev.devopsb26.online
    file: "/app/schema/{{component}}.js"
    idempotent: yes
