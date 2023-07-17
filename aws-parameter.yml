@@ -12,7 +12,6 @@
         - {name: "dev.cart.CATALOGUE_HOST", value: "catalogue-dev.devopsb26.online" }
         - {name: "dev.catalogue.MONGO", value: "true" }
         - {name: "dev.catalogue.MONGO_URL", value: "mongodb://mongodb-dev.devopsb26.online:27017/catalogue" }
-        - {name: "dev.catalogue.MONGO_URL", value: "mongodb://mongodb-dev.devopsb26.online:27017/catalogue" }
         - {name: "dev.frontend.CATALOGUE_URL", value: "http://catalogue-dev.devopsb26.online:80/" }
         - {name: "dev.frontend.CART_URL", value: "http://cart-dev.devopsb26.online:80/" }
         - {name: "dev.frontend.USER_URL", value: "http://user-dev.devopsb26.online:80/" }
